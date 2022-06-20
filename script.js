@@ -50,8 +50,59 @@ const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Satur
 
 // show me that for of loop you learned ealier
 
-const abc = [1,2,3,4,5];
+const abc = ['A','B','C','D','E'];
 
 for(const item of abc) {
   console.log(item)
   }
+
+// for of loop with indexes
+
+for(const [i, v] of abc.entries()){
+  console.log(i,v)
+}
+
+// show me how you destruct an array like you learned
+
+const array1 = ['Array Part 1', 'Array Part 2', 'Array Part 3']
+
+const [a,b,c] = array1
+console.log(a);
+console.log(b);
+console.log(c);
+
+// show me how you use the spread operator
+
+console.log(...array1)
+
+// partial destructure whre you only take 2 items instead of all 3
+
+let [part1, ,part3] = array1;
+console.log(part1);
+console.log(part3);
+
+// SHOW ME how you destructure objects
+
+const person = {
+  name: 'Sara',
+  age: 25,
+  gender: 'female'
+}
+
+let {name, age, gender} = person;
+
+console.log(name);
+console.log(age);
+console.log(gender);
+
+// how about destructure just parts of an object
+
+const person2 = {
+  name2: 'Ken',
+  age2: 23,
+  gender2: 'male'
+}
+
+const {name2, gender2} = person2;
+console.log(name2);
+console.log(gender2);
